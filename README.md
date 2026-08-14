@@ -6,6 +6,8 @@
 
 **为 Windows Steam 版《Life Is Strange》（2015）提供简体中文菜单、界面、对白字幕与中文字体。**
 
+<img src="png/overview.png" alt="《奇异人生》简体中文主菜单效果" width="900">
+
 </div>
 
 ## 下载
@@ -39,16 +41,17 @@ Life_is_Strange_Simplified_Chinese.zip
    `D:\Tools\TFCInstaller`。
 4. 当前版本通过 Steam 启动选项启用简体中文，不需要修改或替换游戏 EXE、DLL，
    也不需要安装任何运行时注入组件。
-5. Steam 启动选项中填写：
+5. 请在 Steam 游戏属性中把游戏语言设置为 **English（英语）**。
+6. Steam 启动选项中填写：
 
    ```text
    -LANGUAGE=CHS
    ```
 
-6. 如果启动选项中已有其它参数，请在原有内容后空一格添加 `-LANGUAGE=CHS`。
-7. 本 Mod 不修改英文语音、游戏流程、角色行为、存档文件或其它官方语言。
-8. 不要同时安装其它会修改游戏语言文件、对白字幕或中文字体的 Mod。
-9. 本 Mod 不包含游戏本体，使用前请先通过合法渠道安装正版游戏。
+7. 如果启动选项中已有其它参数，请在原有内容后空一格添加 `-LANGUAGE=CHS`。
+8. 本 Mod 不修改英文语音、游戏流程、角色行为、存档文件或其它官方语言。
+9. 不要同时安装其它会修改游戏语言文件、对白字幕或中文字体的 Mod。
+10. 本 Mod 不包含游戏本体，使用前请先通过合法渠道安装正版游戏。
 
 ## Main Features / 主要内容
 
@@ -123,6 +126,7 @@ licenses\
 - 操作系统：Windows
 - 游戏版本：Steam 版《Life Is Strange》，可执行文件版本 `1.0.8623.0`
 - 前置工具：[TFC Installer](https://www.nexusmods.com/site/mods/588)
+- Steam 游戏语言：English（英语）
 - 推荐安装前状态：未安装其它中文文本、对白字幕或中文字体 Mod
 
 除 TFC Installer 外，不需要安装其它组件。
@@ -143,16 +147,56 @@ licenses\
    请选择游戏本体的根目录，不要选择 `Game` 文件夹，也不要选择 Mod 文件夹。
 5. 点击 **Mod folder**，选择解压后的
    `Life_is_Strange_Simplified_Chinese` 文件夹，即包含 `GameProfile.xml` 的文件夹。
-6. 按照 TFC Installer 的提示完成安装。
-7. 在 Steam 中右键游戏，打开“属性 → 常规 → 启动选项”，填写：
+6. 点击显示本项目名称的安装按钮；截图中为
+   **Update Life is Strange Simplified Chinese**。等待 TFC Installer 显示文件更新完成。
+7. 在 Steam 中右键游戏，打开“属性 → 常规”，把游戏语言设置为 **English（英语）**。
+8. 在同一页面的“启动选项”中填写：
 
    ```text
    -LANGUAGE=CHS
    ```
 
-8. 以后直接从 Steam 启动游戏即可。
+9. 以后直接从 Steam 启动游戏即可。
 
 安装或卸载 Mod 前请先退出游戏。不要在游戏运行时使用 TFC Installer 修改资源。
+
+### 1. 下载 TFC Installer
+
+打开 [TFC Installer](https://www.nexusmods.com/site/mods/588) 页面，选择 **Manual** 下载，
+解压后运行 `TFCInstaller.exe`。TFC Installer 文件夹建议放在游戏目录之外。
+
+![从 Nexus Mods 下载 TFC Installer](png/step_1.png)
+
+### 2. 选择游戏目录
+
+点击 **Game folder**，选择《Life Is Strange》的游戏根目录。Steam 默认安装位置通常类似：
+
+```text
+D:\steam\steamapps\common\Life Is Strange
+```
+
+![在 TFC Installer 中选择游戏目录](png/step_2.png)
+
+### 3. 选择 Mod 文件夹
+
+点击 **Mod folder**，选择解压后的 `Life_is_Strange_Simplified_Chinese` 文件夹。
+请选择包含 `GameProfile.xml` 的文件夹，不要选择 ZIP，也不要选择其中的 `Game` 子文件夹。
+
+![在 TFC Installer 中选择解压后的 Mod 文件夹](png/step_3.png)
+
+### 4. 安装 Mod
+
+确认游戏目录与 Mod 文件夹都正确后，点击显示本项目名称的安装按钮。TFC Installer
+显示文件更新完成后，Mod 即已安装。
+
+![在 TFC Installer 中安装 Life is Strange Simplified Chinese](png/step_4.png)
+
+### 5. 设置 Steam 语言与启动选项
+
+在 Steam 中打开“属性 → 常规”，把游戏语言设置为 **English（英语）**，然后在
+“启动选项”中填写 `-LANGUAGE=CHS`。以后从 Steam 正常启动游戏即可。
+
+![在 Steam 中选择英语并填写简体中文启动参数](png/step_5.png)
 
 ## Updating / 更新方法
 
