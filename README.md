@@ -33,6 +33,9 @@ Life_is_Strange_Simplified_Chinese.zip
 任务目标和剧情分支中的固定译名。长对白按实际游戏显示空间重新检查分段，菜单、字幕、手写文字
 和功能界面也分别使用与原作角色相符的中文字体风格。
 
+片尾夕阳对话、风暴前后、章节前情提要及其它 Bink 过场字幕也已补全；这些字幕使用游戏
+`Movies` 目录中的独立脚本，随 Mod 一起安装，不属于普通 UE3 `Localization` 文件。
+
 本 Mod 使用小赖字体处理对白、手写文字和对话相关字体，使用思源黑体简体处理功能界面字体。
 字体资源覆盖本 Mod 所需的简体中文字符，正常情况下不应出现缺字方框。
 
@@ -70,6 +73,7 @@ Life_is_Strange_Simplified_Chinese.zip
 - HUD、互动提示、教程和系统提示
 - 任务目标、剧情信息和章节标题
 - 剧情对白与字幕
+- 片尾夕阳对话、风暴前后、章节前情提要及其它 Bink 过场字幕
 - 麦克斯的日记、短信、照片和场景文字
 - 物品、环境互动和其他可见文本
 
@@ -120,7 +124,10 @@ licenses\
 其中：
 
 - `GameProfile.xml`：供 TFC Installer 识别 Mod 的安装配置
-- `Game\`：游戏本地化文本、中文字体和相关资源
+- `Game\LifeIsStrangeGame\Localization\CHS\`：简体中文语言资源
+- `Game\LifeIsStrangeGame\Localization\INT\`：已有存档语言状态的中文兼容资源
+- `Game\LifeIsStrangeGame\Movies\`：片尾、前情提要和其它 Bink 过场的中文字幕脚本
+- `Game\LifeIsStrangeGame\CookedPCConsoleFinal\`：中文字体、启动语言资源和相关资源
 - `licenses\`：项目许可及第三方字体许可文件
 
 请在 TFC Installer 中选择包含 `GameProfile.xml` 的 Mod 根文件夹，
@@ -249,6 +256,7 @@ D:\steam\steamapps\common\Life Is Strange
 - 游戏选择已有存档后，部分界面会重新读取存档关联的语言设置；本 Mod 会在安装期间让英文文本槽
   同步显示简体中文，因此主菜单、存档选择界面和进入游戏后的章节内容都应保持简体中文。
 - 英文语音保持原样，字幕和界面文字显示为简体中文。
+- 片尾、前情提要和其它 Bink 过场字幕来自 `Game\LifeIsStrangeGame\Movies\` 独立脚本；如果只在这些过场看不到字幕，先确认游戏设置已开启字幕，并检查完整 Mod 文件夹是否安装。
 - 不同分辨率、显示比例和 UI 缩放设置可能影响自动换行位置，但不会改变译文内容。
 - 如果同时使用其它字体 Mod，实际显示效果可能与本 Mod 的预期不同。
 
