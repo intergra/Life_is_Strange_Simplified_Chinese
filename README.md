@@ -36,6 +36,9 @@ Life_is_Strange_Simplified_Chinese.zip
 片尾夕阳对话、风暴前后、章节前情提要及其它 Bink 过场字幕也已补全；这些字幕使用游戏
 `Movies` 目录中的独立脚本，随 Mod 一起安装，不属于普通 UE3 `Localization` 文件。
 
+同时修复了部分过场字幕实际读取旧版运行时字体包而显示空心方框的问题。现在相关字幕字体
+资源会随 Mod 一起更新，正常安装后无需额外配置。
+
 本 Mod 使用小赖字体处理对白、手写文字和对话相关字体，使用思源黑体简体处理功能界面字体。
 字体资源覆盖本 Mod 所需的简体中文字符，正常情况下不应出现缺字方框。
 
@@ -127,8 +130,11 @@ licenses\
 - `Game\LifeIsStrangeGame\Localization\CHS\`：简体中文语言资源
 - `Game\LifeIsStrangeGame\Localization\INT\`：已有存档语言状态的中文兼容资源
 - `Game\LifeIsStrangeGame\Movies\`：片尾、前情提要和其它 Bink 过场的中文字幕脚本
-- `Game\LifeIsStrangeGame\CookedPCConsoleFinal\`：中文字体、启动语言资源和相关资源
+- `Game\LifeIsStrangeGame\CookedPCConsoleFinal\`：中文字体、启动语言资源、运行时字幕字体包和相关资源
 - `licenses\`：项目许可及第三方字体许可文件
+
+其中 `CookedPCConsoleFinal` 包含 `Startup_LOC_CHS.upk`、`Startup_LOC_INT.upk`、
+运行时字幕字体包 `ExampleGame_LOC_INT.upk` 和 `ExampleGame.upk.PackagePatch`。
 
 请在 TFC Installer 中选择包含 `GameProfile.xml` 的 Mod 根文件夹，
 不要选择 ZIP 文件本身，也不要选择其中的 `Game` 子文件夹。
